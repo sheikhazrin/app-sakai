@@ -1,5 +1,5 @@
 {
-    "name": "sakai-react",
+    "name": "app-sakai",
     "version": "7.0.3-SNAPSHOT",
     "homepage": ".",
     "private": false,
@@ -9,8 +9,30 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@babel/core": "^7.17.2",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "@svgr/webpack": "^6.2.1",
+        "axios": ">=0.21.2",
+        "babel-loader": "^8.2.3",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^10.2.4",
+        "css-loader": "^6.6.0",
+        "file-loader": "^6.2.0",
+        "html-minimizer-webpack-plugin": "^3.5.0",
+        "html-webpack-plugin": "^5.5.0",
+        "json-loader": "^0.5.7",
+        "node-sass": "^7.0.1",
         "prismjs": ">=1.25.0",
-        "axios": ">=0.21.2"
+        "react-hot-loader": "^4.13.0",
+        "sass-loader": "^12.4.0",
+        "style-loader": "^3.3.1",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.68.0",
+        "webpack-assets-manifest": "^5.1.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.4",
+        "webpack-merge": "^5.8.0"
     },
     "dependencies": {
         "@fullcalendar/core": "^5.7.2",
@@ -34,8 +56,8 @@
         "classnames": "^2.2.6"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "webpack serve --config ./webpack.config.js --mode development",
+        "build": "webpack build --config ./webpack.config.js --stats verbose",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
