@@ -8,6 +8,9 @@
         "url": "https://github.com/sheikhazrin/app-sakai"
     },
     "license": "MIT",
+    "devDependencies": {
+        "prismjs": ">=1.25.0"
+    },
     "dependencies": {
         "@fullcalendar/core": "^5.7.2",
         "@fullcalendar/daygrid": "^5.7.2",
@@ -18,7 +21,7 @@
         "primereact": "7.2.0",
         "primeflex": "3.1.0",
         "primeicons": "^5.0.0",
-        "prismjs": "1.9.0",
+        "prismjs": ">=1.25.0",
         "react": "^17.0.1",
         "react-app-polyfill": "^1.0.6",
         "react-dom": "^17.0.1",
